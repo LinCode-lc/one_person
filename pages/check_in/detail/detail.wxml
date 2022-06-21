@@ -1,0 +1,32 @@
+<!--pages/detail/detail.wxml-->
+<view style="margin-top:60px"></view>
+<view class="my_input"><input type="text" bindinput="doInput"  placeholder="打卡标题"></input></view>
+<view class="section">
+  <view class="section__title">打卡时间</view>
+  <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+    <view class="picker">
+      {{time}}
+    </view>
+  </picker>
+</view>
+<button bindtap="submit">确定</button>
+<!-- <van-cell-group>
+  <van-field
+    value="{{ value }}"
+    placeholder="请输入打卡名称"
+    border="{{ false }}"
+    bind:change="onChange"
+  />
+</van-cell-group>
+<van-datetime-picker
+  type="time"
+  value="{{ currentDate }}"
+  min-hour="{{ minHour }}"
+  max-hour="{{ maxHour }}"
+  bind:input="onInput"
+  title="打卡时间"
+  confirm-button-text=""
+  cancel-button-text=""
+  
+/> -->
+

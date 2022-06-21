@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="bgc" style="margin-top:60px">
+
+  <button bindtap="creatCheckin">创建打卡</button>
+  <view style="mragin-top:60px"></view>
+ 
+  <block wx:for="{{checkinList}}" wx:key="_id">
+    <check checkinItem="{{item}}"></check>
+  </block>
+ 
+</view>

@@ -1,0 +1,13 @@
+<view style="display:{{isLoading?'block':'none'}}">
+  <nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+  <view class='container' style='margin-top: {{height*2+20}}px'>
+    <view class="section">
+      <view class="section__title">普通选择器</view>
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <view class="picker">
+          当前选择：{{array[index]}}
+        </view>
+      </picker>
+    </view>
+  </view>
+</view>

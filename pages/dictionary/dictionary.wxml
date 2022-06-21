@@ -1,0 +1,26 @@
+<view class="container">
+  <!--pages/dictionary/dictionary.wxml-->
+  <view style="margin-top:60px"></view>
+  <view class="title">中医药手册</view>
+  <view class="search_container">
+    <input class="search" placeholder="请输入内容" bindinput="doInput"></input>
+    <view class="btn" bindtap="doSearch">搜索</view>
+  </view>
+  <!-- <text>你可否十分快乐圣诞节\n京东卡等级ask的</text> -->
+  <view class="aq">
+    <block wx:for="{{searchRes.annotations}}">
+      <view class="aq_q">
+        <image class="avatar" src="../../images/dictionary/question.png"></image>
+        <view class="aq_text"><text>{{item.Q}}</text></view>
+      </view>
+      <view class="aq_a">
+        <image class="avatar" src="../../images/dictionary/answer.png"></image>
+        <view class="aq_text"><text>{{item.A}}</text></view>
+      </view>
+
+    </block>
+  </view>
+  <view class="detail" bindtap="doShow">展开详情</view>
+  <view class="detail_text"><text  wx:if="{{showDetail}}">{{searchRes.text}}</text></view>
+  <!-- <text>{{searchRes.text}}</text> -->
+</view>

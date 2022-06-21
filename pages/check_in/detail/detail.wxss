@@ -1,0 +1,14 @@
+/* pages/detail/detail.wxss */
+.my_input{
+  margin-left: 30rpx;
+  font-size: 40rpx;
+}
+.section{
+  margin: 200rpx auto;
+  text-align: center;
+  
+  font-size: 40rpx;
+}
+.picker{
+  margin-top: 20rpx;
+}

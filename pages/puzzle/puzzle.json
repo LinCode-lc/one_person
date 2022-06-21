@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "control": "/components/games/puzzle/control"
+  }
+}

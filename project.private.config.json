@@ -1,0 +1,66 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": 0,
+          "name": "pages/message_detail/message_detail",
+          "pathName": "pages/me/me",
+          "query": "messageId=45",
+          "scene": null
+        },
+        {
+          "name": "components/games/puzzle/control",
+          "pathName": "components/games/puzzle/control",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/test/test",
+          "pathName": "pages/test/test",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/games/puzzle",
+          "pathName": "pages/games/puzzle",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/puzzle/puzzle",
+          "pathName": "pages/puzzle/puzzle",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/dictionary/dictionary",
+          "pathName": "pages/dictionary/dictionary",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/welcome/welcome",
+          "pathName": "pages/welcome/welcome",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

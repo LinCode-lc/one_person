@@ -1,0 +1,21 @@
+<!--pages/daka/daka.wxml-->
+
+<view class="daka">
+  <view class="left" bindtap="doEdit">
+    <view class="icon"><image src="../../../images/check/pen.svg"></image></view> 
+    <view class="text">
+      <view class="title">{{checkinItem.title}}</view>
+      <view class="nums">打卡{{checkinItem.count}}次</view>
+    </view>
+    <view class="time">{{checkinItem.when}}</view>
+  </view>
+  <view class="right"  bind:touchstart="start"
+       bind:touchend="end" hover-start-time="1200"
+       hover-class="press-hover">
+     <view class="pressBox">
+        <image src="{{imageSrc}}" alt="" />
+     </view>
+      
+  </view>
+  
+</view>

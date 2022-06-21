@@ -1,0 +1,50 @@
+<view class="htmleaf-container" style="background:white;display:{{isLoading?'none':'block'}};height:100%;">
+
+  <view class="spinner-box" style="margin:0 auto;">
+    <view class="pulse-container" style="margin-top:500rpx;">
+      <view class="pulse-bubble pulse-bubble-1"></view>
+      <view class="pulse-bubble pulse-bubble-2"></view>
+      <view class="pulse-bubble pulse-bubble-3"></view>
+    </view>
+  </view>
+
+</view>
+
+<view style="display:{{isLoading?'block':'none'}}">
+
+  <view class='container' style='padding-top: {{height*2+40}}px ; background-image: url(../../images//puzzle/bg.jpg)'>
+    <view class="top">
+      <view class="base_img">
+        <image class="base_bg_img" src="../../images/puzzle/box.png"></image>
+        <image class="base_main_img" src="{{baseSrc}}{{puzzle.gameImg}}/{{puzzle.gameImg}}.jpg"></image>
+      </view>
+      <view class="control">
+        <view class="btn" bindtap="doStart">开始游戏</view>
+        <view class="btn" bindtap="doChangeImg">换中药</view>
+        <view class="btn" bindtap="doChangeDifficulty">换难度</view>
+      </view>
+    </view>
+    <view>
+      <view class="stage">
+        <view class="bg">
+          <image src="../../images/puzzle/box.png"></image>
+        </view>
+        <view class="game-name" wx:if="!puzzle.isStart">华容道</view>
+        <view class="content clearfix" wx:if="puzzle.isStart">
+          <view wx:for="{{puzzle.randomData}}" class="{{'img'+puzzle.level}} img" data-item="{{item}}"
+            bindtap="handleMove">
+            <image wx:if="{{item != puzzle.randomData.length}}"
+              src="{{baseSrc}}{{puzzle.gameImg}}/{{puzzle.level}}/{{item}}.jpg" />
+          </view>
+        </view>
+      </view>
+      <view class="other">
+        <view class="point">
+          <image :src="getGameImgFile(gameImg)"></image>
+        </view>
+        <Control :games="games"></Control>
+      </view>
+    </view>
+  </view>
+
+</view>

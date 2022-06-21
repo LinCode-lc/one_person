@@ -1,0 +1,62 @@
+/* pages/dictionary/dictionary.wxss */
+.container{
+  padding: 20rpx 20rpx;
+}
+.title{
+  font-size: 40rpx;
+  font-weight: bold;
+  text-align: center;
+}
+.search_container{
+  margin: 30rpx 0 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid gray;
+  border-radius: 10rpx;
+}
+.btn{
+  height: 64rpx;
+  line-height: 60rpx;
+  width: 200rpx;
+  text-align: center;
+  background-color: #87C3A0 ;
+}
+.search{
+  height: 60rpx;
+  width: 60%;
+  padding: 0 20rpx;
+  /* margin: 30rpx 0 40rpx; */
+}
+.aq_q{
+  display: flex;
+  align-items: center;
+  margin-top: 10rpx;
+}
+.aq_a{
+  display: flex;
+  align-items: center;
+  margin-top: 10rpx;
+  flex-direction: row-reverse;
+}
+.avatar{
+  margin: 0 10rpx;
+  width: 40px;
+  height: 40px;
+}
+.aq_q .aq_text{
+  width: 500rpx;
+}
+.aq_a .aq_text{
+  width: 400rpx;
+
+  /* text-align: end; */
+}
+.detail{
+  color: #87C3A0;
+  text-align: center;
+  margin: 50rpx 0 20rpx;
+}
+.detail_text{
+  margin: 20rpx;
+}
